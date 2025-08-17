@@ -1,0 +1,79 @@
+/* universal selector for all selectors  */
+* {
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Poppins', sans-serif; 
+    box-sizing: border-box; 
+
+}
+
+body {
+    /* color code in hexadecimal */
+    background: #080808; 
+    color: #fff; 
+}
+#header{
+    width: 100%; 
+    height: 100vh; 
+    background-image: url(images/rosie-sleepy.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+.container {
+    /* 10px from the top and bottom */
+    /* 10% from the left side and right side  */
+    /* spaces out the logo from the left side and 
+    elements that will come below the logo  */
+    padding: 10px 10%; 
+}
+.logo-size {
+    height: 100px; 
+    width: 100px; 
+}
+/* is a built-in tag in html */
+nav {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+/* css applies ul and li that are inside a nav dive  */
+/* the order of selectors is important because it defines 
+the relationship between elements */
+ /* ul and li elements that are indie a nav */
+nav ul li {
+    display: inline-block;  
+    list-style: none;
+    /* add margin 10px top and bottom 20px left and right */
+    margin: 10px 20px; 
+}
+nav ul li a {
+    color: #fff; 
+    /* removes the underline in with a tags */
+    text-decoration: none;
+    font-size: 18px; 
+    position: relative; 
+}
+/* animaton for hover effect or mousing over */
+nav ul li a::after { 
+    content: ''; 
+    width: 0; 
+    height: 3px; 
+    background: #b4d0fc; 
+    position: absolute; 
+    left: 0; 
+    bottom: -6px; 
+    transition: 0.5s; 
+}
+nav ul li a:hover::after{ 
+    width: 100%; 
+}
+.hero-box{
+    margin-top: 15%; 
+    font-size: 20px;
+}
+.hero-box h1 {
+    font-size: 40px; 
+    margin-top: 20px; 
+}
