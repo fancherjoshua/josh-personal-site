@@ -41,36 +41,40 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ratione ut omnis ducimus voluptatem libero quibusdam, adipisci officia veniam explicabo? Quasi reprehenderit laudantium excepturi iusto. Ipsum possimus numquam recusandae aliquid.
-                    Sed similique dolores doloribus suscipit beatae voluptatum, debitis nostrum harum sunt accusamus non atque quam vitae facere! Dicta placeat sunt asperiores cumque ex repellat vero perferendis magnam cupiditate. Sint, accusamus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ratione ut omnis ducimus
+                        voluptatem libero quibusdam, adipisci officia veniam explicabo? Quasi reprehenderit laudantium
+                        excepturi iusto. Ipsum possimus numquam recusandae aliquid.
+                        Sed similique dolores doloribus suscipit beatae voluptatum, debitis nostrum harum sunt accusamus
+                        non atque quam vitae facere! Dicta placeat sunt asperiores cumque ex repellat vero perferendis
+                        magnam cupiditate. Sint, accusamus!</p>
                     <!-- adding tabs -->
-                     <div class="tab-titles">
+                    <div class="tab-titles">
                         <!-- onclick="opentab" we right a function here -->
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
-                     </div>
-                     <div class="tab-contents active-tab" id="skills">
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>UI/UX</span><br>Designing web/app interfaces</li>
                             <li><span>Web Development</span><br>HTML/CSS</li>
                             <li><span>App Development </span><br>iOS apps</li>
                         </ul>
-                     </div>
-                     <div class="tab-contents" id="experience">
+                    </div>
+                    <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>Current</span><br>Pharmacist - Rite Aid</li>
                             <li><span>2022</span><br>Valley Medical Center</li>
                             <li><span>2020 </span><br>Kroger</li>
                         </ul>
-                     </div>
-                     <div class="tab-contents" id="education">
+                    </div>
+                    <div class="tab-contents" id="education">
                         <ul>
                             <li><span>MSCS (Anticipated 2027)</span><br>Northeastern University</li>
                             <li><span>Pharm D.</span><br>Washington State University</li>
                             <li><span>BBA Decision Science</span><br>Washington State University</li>
                         </ul>
-                     </div>
+                    </div>
                 </div>
             </div>
 
@@ -78,24 +82,118 @@
     </div>
 
     <!-- ----------Services section of the webpage ---------->
-     <!-- need div id services here -->
-<!-- adding our javascript here -->
-<script>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Hobbies</h1>
+            <div class="services-list">
+                <div>
+                    <!-- need to put in icon  -->
+                    <!-- place holder currently with img -->
+                     <img src="/images/bike-icon.svg" width="100px">
+                    <h2>Outdoor Adventures</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus cum magnam quae distinctio tempora incidunt voluptates, impedit eum id quos dolorem, laudantium sint adipisci. Fuga numquam velit beatae nihil inventore.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <!-- need to put in icon  -->
+                    <!-- place holder currently with img -->
+                    <img src="/images/bike-icon.svg" width="100px">
+                    <h2>Traveling</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus cum magnam quae distinctio tempora incidunt voluptates, impedit eum id quos dolorem, laudantium sint adipisci. Fuga numquam velit beatae nihil inventore.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div><!-- need to put in icon  -->
+                    <!-- place holder currently with img -->
+                     <img src="/images/bike-icon.svg" width="100px">
+                    <h2>Coffee Shop Reviews</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus cum magnam quae distinctio tempora incidunt voluptates, impedit eum id quos dolorem, laudantium sint adipisci. Fuga numquam velit beatae nihil inventore.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------- portfolio ---------- -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/bali.png">
+                    <div class="layer">
+                        <h3>GitHub</h3>
+                        <p>My code repository on GitHub</p>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/california.png">
+                    <div class="layer">
+                        <h3>LinkedIn</h3>
+                        <p>Connect with me on LinkedIn</p>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/miami.png">
+                    <div class="layer">
+                        <h3>In Progress Web Development Project</h3>
+                        <p>Fizzy Water Co. </p>
+                        
+                    </div>
+                </div>    
+            </div>
+            <a href="#" class="btn">See more</a>
 
-    var tablinks = document.getElementsByClassName("tab-links"); 
-    var tabcontents = document.getElementsByClassName("tab-contents"); 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link"); 
-        document.getElementById(tabname).classList.add("active-tab")
-    }
+        </div>
+     </div>
 
-</script>    
+     <!-- ------- Contact ------- -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>fancher.jo@northeastern.edu</p>
+                    <div class="social-icons">
+                        <a href=""><img src="images/bike-icon.svg" alt=""></a>
+                        <a href=""><img src="images/bike-icon.svg" alt=""></a>
+                        <a href=""><img src="images/bike-icon.svg" alt=""></a>
+                    </div>
+
+                </div>
+                <div class="contact-right">
+                    <form>
+                        
+                    </form>
+
+
+                </div>
+            </div>
+
+        </div>
+
+      </div>
+
+
+
+    <!-- need div id services here -->
+    <!-- adding our javascript here -->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
 </body>
 
 </html>
