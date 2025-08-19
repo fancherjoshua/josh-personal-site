@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css-normalize.css">
     <link rel="stylesheet" href="style.css">
 
+
 </head>
 
 <body>
@@ -16,15 +17,19 @@
         <div class="container">
             <nav>
                 <img src="images/jf-logo-white.png" class="logo logo-size">
-                <ul>
+                <ul id="sidemenu">
                     <!-- add the a tag so it clickable -->
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
-
+                    <!-- close icon for responseive design -->
+                    <img src="images/close-menu-icon.svg" class="white-icon" onclick="closemenu()">
                 </ul>
+                <!-- burger icon for responsive design -->
+                <img src="images/burger-menu-icon.svg" class="white-icon" onclick="openmenu()">
+                
             </nav>
             <div class="hero-box">
                 <p>MSCS @ Northeastern University</p>
@@ -96,8 +101,7 @@
                 </div>
                 <div>
                     <!-- need to put in icon  -->
-                    <!-- place holder currently with img -->
-                    <img src="/images/bike-icon.svg" width="100px">
+                    <img src="/images/burger-menu-icon.svg" width="100px">
                     <h2>Traveling</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus cum magnam quae distinctio tempora incidunt voluptates, impedit eum id quos dolorem, laudantium sint adipisci. Fuga numquam velit beatae nihil inventore.</p>
                     <a href="#">Learn More</a>
@@ -155,14 +159,21 @@
                     <h1 class="sub-title">Contact Me</h1>
                     <p>fancher.jo@northeastern.edu</p>
                     <div class="social-icons">
-                        <a href=""><img src="images/bike-icon.svg" alt=""></a>
-                        <a href=""><img src="images/bike-icon.svg" alt=""></a>
-                        <a href=""><img src="images/bike-icon.svg" alt=""></a>
+                        <!-- need social icons here *** TO DO *** -->
+                        <a href="#"><img src="images/bike-icon.svg" alt=""></a>
+                        <a href="#"><img src="images/bike-icon.svg" alt=""></a>
+                        <a href="#"><img src="images/bike-icon.svg" alt=""></a>
                     </div>
+                    <!-- resume in pdf form here -->
+                    <a href="images/test-resume-2025.pdf" download class="btn btn2">Download CV</a>
 
                 </div>
                 <div class="contact-right">
                     <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
                         
                     </form>
 
@@ -171,13 +182,17 @@
             </div>
 
         </div>
+        <div class="copyright">
+            <p>Joshua Fancher - Portfolio - Web Design - 2025</p>
+        
+        </div>
 
       </div>
 
 
 
     <!-- need div id services here -->
-    <!-- adding our javascript here -->
+    <!-- javascript for about section -->
     <script>
 
         var tablinks = document.getElementsByClassName("tab-links");
@@ -194,6 +209,18 @@
         }
 
     </script>
+
+    <!-- menu javascript -->
+     <script>
+        var sidemenu = document.getElementById("sidemenu"); 
+
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+     </script>
 </body>
 
 </html>
