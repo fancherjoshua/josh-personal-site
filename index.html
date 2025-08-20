@@ -19,11 +19,11 @@
                 <img src="images/jf-logo-white.png" class="logo logo-size">
                 <ul id="sidemenu">
                     <!-- add the a tag so it clickable -->
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">My Hobbies</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <!-- close icon for responseive design -->
                     <img src="images/close-menu-icon.svg" class="white-icon" onclick="closemenu()">
                 </ul>
@@ -61,9 +61,10 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                            <li><span>Backend Development</span><br>Python/Java/SQL</li>
+                            <li><span>Cloud </span><br>AWS Certified Cloud Practitioner </li>
                             <li><span>Web Development</span><br>HTML/CSS</li>
-                            <li><span>App Development </span><br>iOS apps</li>
+
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
@@ -91,27 +92,27 @@
         <div class="container">
             <h1 class="sub-title">My Hobbies</h1>
             <div class="services-list">
-                <div>
+                <div style="background: url('images/snow-lake.svg') center/cover">
                     <!-- need to put in icon  -->
                     <!-- place holder currently with img -->
-                     <img src="/images/bike-icon.svg" width="100px">
+                    <img src="/images/person-hiking-solid-full.svg" class="white-icon-hobby" width="75px">
                     <h2>Outdoor Adventures</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus cum magnam quae distinctio tempora incidunt voluptates, impedit eum id quos dolorem, laudantium sint adipisci. Fuga numquam velit beatae nihil inventore.</p>
-                    <a href="#">Learn More</a>
+                    <p>Fueled by fresh air and adventure, whether it be hiking, biking, longboarding, fishing, stand-up paddle boarding or even barbecuing, really when the weather is good I'll be on my next adventure.</p>
+                    <a href="https://www.wta.org/go-hiking/hikes/snow-lake-1">Learn More - My Favorite Hike - Snow Lake, WA. </a>
                 </div>
-                <div>
+                <div style="background: url('images/stmarks-2.svg') center/cover">
                     <!-- need to put in icon  -->
-                    <img src="/images/burger-menu-icon.svg" width="100px">
+                    <img src="/images/plane-departure-solid-full.svg" class="white-icon-hobby" width="75px">
                     <h2>Traveling</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus cum magnam quae distinctio tempora incidunt voluptates, impedit eum id quos dolorem, laudantium sint adipisci. Fuga numquam velit beatae nihil inventore.</p>
-                    <a href="#">Learn More</a>
+                    <p>Exploring the world and experiencing wonders beyond imagination is truly life changing. From ancient cities to tropical beaches to bustling metropolisis the world is just too increible to not be explored. </p>
+                    <a href="https://www.ricksteves.com/europe/italy">Learn More - My Favorite Travel Destination - Italy     </a>
                 </div>
                 <div><!-- need to put in icon  -->
                     <!-- place holder currently with img -->
-                     <img src="/images/bike-icon.svg" width="100px">
-                    <h2>Coffee Shop Reviews</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus cum magnam quae distinctio tempora incidunt voluptates, impedit eum id quos dolorem, laudantium sint adipisci. Fuga numquam velit beatae nihil inventore.</p>
-                    <a href="#">Learn More</a>
+                     <img src="/images/mug-hot-solid-full.svg" class="white-icon-hobby" width="75px">
+                    <h2>Coffee Shop Connoisseur</h2>
+                    <p>With right the coffee, the right amount of caffeine, and a vibe that puts you into deep productivity mode, the coffee shop transforms from being a mundane part of my day to the highlight lifting me through the day. </p>
+                    <a href="#">Learn More - My Favorite Coffee Shop - Cafe Hagen - Bellevue, WA. </a>
                 </div>
             </div>
         </div>
@@ -124,16 +125,23 @@
                 <div class="work">
                     <img src="images/bali.png">
                     <div class="layer">
-                        <h3>GitHub</h3>
-                        <p>My code repository on GitHub</p>
+                        <a href="https://www.github.com">
+                            <h2>GitHub</h2>
+                            <p>My code repository on GitHub</p>
+                        </a>
                         
                     </div>
                 </div>
                 <div class="work">
                     <img src="images/california.png">
                     <div class="layer">
-                        <h3>LinkedIn</h3>
-                        <p>Connect with me on LinkedIn</p>
+                        
+                        
+                        <a href="https://www.linkedin.com">
+                            <h2>LinkedIn</h2>
+                            <p>Connect with me on LinkedIn</p>
+                        </a>
+                        
                         
                     </div>
                 </div>
@@ -158,24 +166,20 @@
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
                     <p>fancher.jo@northeastern.edu</p>
-                    <div class="social-icons">
-                        <!-- need social icons here *** TO DO *** -->
-                        <a href="#"><img src="images/bike-icon.svg" alt=""></a>
-                        <a href="#"><img src="images/bike-icon.svg" alt=""></a>
-                        <a href="#"><img src="images/bike-icon.svg" alt=""></a>
-                    </div>
+                   
                     <!-- resume in pdf form here -->
                     <a href="images/test-resume-2025.pdf" download class="btn btn2">Download CV</a>
 
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                         
                     </form>
+                    <span id="msg"></span>
 
 
                 </div>
@@ -221,6 +225,26 @@
             sidemenu.style.right = "-200px"
         }
      </script>
+
+     <!-- script for google sheets contact form -->
+     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwWCtJBqBWJGh75MOmSydeZTzA1hFTXYu28uC1VAnLeuzDNw5b8i4mVov8DsH4me3ee0Q/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Form Submitted Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 
 </html>
