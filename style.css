@@ -334,7 +334,7 @@ nav .white-icon {
     /* TO DO update profile phone for smart phone  */
     #header {
         background-image: url(images/josh-button-up-mobile-version.png); 
-        background-attachment: fixed;      
+        background-attachment: scroll;      
         min-height: 100svh;  
     
     }
