@@ -40,8 +40,10 @@ body {
 nav {
     display: flex; 
     align-items: center; 
-    justify-content: space-between; 
+    justify-content: space-around; 
     flex-wrap: wrap; 
+
+ 
 }
 /* css applies ul and li that are inside a nav dive  */
 /* the order of selectors is important because it defines 
